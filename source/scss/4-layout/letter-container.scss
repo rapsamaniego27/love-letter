@@ -1,0 +1,26 @@
+.letter-container{
+  width: 1020px;
+  height:auto;
+  margin: 50px auto;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  
+  .letter{
+    width:900px;
+    margin:0 auto;
+    background:$white;
+
+   @media #{$device-sm} {
+     width: 100%;
+     margin: 0 auto;
+   }
+    
+  }
+
+ @media #{$device-sm} {
+   width: 100%;
+   margin: 0 auto;
+ }
+}             
+

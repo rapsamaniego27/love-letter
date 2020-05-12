@@ -32,7 +32,13 @@ h6{
 }
 
 p{
-  font-size: 1rem
+  font-size: 1.25rem;
+  font-family: $serif;
+  text-align:justify;
+
+  @media #{$device-sm} {
+    font-size: 1rem;
+  }
 }
 
 

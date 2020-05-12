@@ -1,0 +1,30 @@
+.letter-header {
+  background: $primary;
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .letter-header__title{
+    color:$white;
+  }
+
+  .letter-header__date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .letter-header__date {
+      color: $white;
+      text-align: right;
+    }
+
+    .letter-header__time {
+      color: $white;
+      text-align: right;
+    }
+
+
+  }
+}

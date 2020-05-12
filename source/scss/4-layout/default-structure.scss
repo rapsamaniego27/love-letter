@@ -6,6 +6,11 @@
 
 #main{
   flex: 1 0 auto;
+  background: #F9C8CE;
+  @media #{$device-sm} {
+   padding: 30px;
+  }
+
 }
 
 

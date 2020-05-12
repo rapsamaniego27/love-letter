@@ -1,0 +1,11 @@
+.envelope{
+  width:950px;
+  height: auto;
+  background: $accent;
+  margin:0 auto;
+
+  @media #{$device-sm} {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

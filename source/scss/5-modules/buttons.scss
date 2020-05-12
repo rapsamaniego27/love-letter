@@ -15,3 +15,9 @@
   @include btn-background($warning);
 }
 
+.btn-primary{
+  @include btn-background($primary);
+  border-radius: 30px;
+  padding:8px 50px;
+  box-shadow: 0 0 0.4 rgba(0, 0, 0, 0.75);
+}
