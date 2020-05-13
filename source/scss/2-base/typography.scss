@@ -35,6 +35,7 @@ p{
   font-size: 1.25rem;
   font-family: $serif;
   text-align:justify;
+  line-height:1.25rem;
 
   @media #{$device-sm} {
     font-size: 1rem;

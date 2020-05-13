@@ -8,6 +8,7 @@ const letter = new Letter(modalHugOverlay);
 
 
 //Display output
+password.checkField(formPassword);
 password.submitPassword(formPassword);
 letter.showHug();
 letter.closeHug();

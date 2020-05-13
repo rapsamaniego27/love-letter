@@ -5,11 +5,13 @@ class Password {
     this.password = password;
     this.submit = submit;
     this.modalFormImg = document.querySelector('#modalFormImg');
+    this.rightPassword = 'raprapiscool';
+
   }
 
   // Properties
   validatePassword() {
-   const rightPassword = 'raprapiscool';
+  
    const passwordValue = this.password.value;
    const errorClass = 'modal-form__error--show';
    const successClass = 'modal-form__success--show';
@@ -20,18 +22,15 @@ class Password {
    
 
 
-
    /* if Password is not equal to the right password */
-   if(passwordValue != rightPassword) {
+   if(passwordValue != this.rightPassword) {
      this.setMessage(messageSpan, messageError, errorClass);
 
     /* Changes Hello Kitty's mood */
     this.modalFormImg.src = './images/angry-kitty.png';
 
-     setTimeout(() => {
-      messageSpan.classList.remove(errorClass);
-       this.modalFormImg.src = './images/hello-kitty.png';
-     }, 3000);
+    this.neutralizeKitty(messageSpan, errorClass);
+     
    }else{
      
     this.setMessage(messageSpan, messageSuccess, successClass);
@@ -48,12 +47,12 @@ class Password {
       modal.classList.add('modal--hide');
     }, 2000);
     
+
     
 
    }
    /* End of Statement */
 
-   
    
    
   }
@@ -66,18 +65,55 @@ class Password {
           
     });
 
-    this.password.addEventListener('keydown', () => {
-      this.validatePassword();
-    });
+  }
 
+  checkField(){
+    this.password.addEventListener('keyup', () => {
+         
+         const passwordValue = this.password.value;
+         const errorClass = 'modal-form__error--show';
+         const successClass = 'modal-form__success--show';
+         const messageSpan = document.querySelector('#formMessage');
+
+         const messageError = 'Mali password mo besh!';
+         console.log(passwordValue);
+
+         if (passwordValue != this.rightPassword){
+           this.setMessage(messageSpan, messageError, errorClass);
+
+           /* Changes Hello Kitty's mood */
+           this.modalFormImg.src = './images/angry-kitty.png';
+           
+           
+         }else{
+
+            messageSpan.classList.remove(errorClass);
+
+            this.setMessage(messageSpan, 'Try mo nga besh', successClass);
+
+            this.modalFormImg.src = './images/hello-kitty.png';
+         }
+
+
+
+
+
+    });
   }
   
   setMessage(target, message, classname){
-      console.log(target);
-      
+
       target.classList.add(classname);
       target.innerHTML = message;
 
+
+  }
+
+  neutralizeKitty(target, errorClass){
+    setTimeout(() => {
+      target.classList.remove(errorClass);
+      this.modalFormImg.src = './images/hello-kitty.png';
+    }, 3000);
 
   }
 

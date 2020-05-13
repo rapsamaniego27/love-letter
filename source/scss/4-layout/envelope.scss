@@ -20,12 +20,16 @@
 
 
     @media #{$device-sm} {
-      font-size:2rem;
+      font-size:1.75rem;
     }
   }
 
   .envelope-rose{
     width:82px;
+
+    @media #{$device-sm} {
+      width:60px;
+    }
   }
 }
 
