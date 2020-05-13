@@ -93,8 +93,8 @@ class Password {
 
   submitPassword(){
     const form = document.querySelector('#form');
-    form.addEventListener('submit', ()=> {   
-
+    form.addEventListener('submit', (e)=> {   
+      e.preventDefault();
      this.validatePassword();
           
     });
