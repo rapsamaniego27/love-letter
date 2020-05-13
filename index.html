@@ -16,19 +16,36 @@
 </head>
 <body>
   <div id="wrapper">
-    <div class="modal-overlay">
+    <div class="modal-overlay modal--hide" id="modalHugOverlay">
       <div class="modal-hug__container">
+        <h2 class="modal-hug__heading">Here's a big hug!</h2>
         <img src="./images/hug.gif" alt="Hug" title="Hug" class="modal-hug-img">
+        <a href="#" class="modal-hug__close">Close</a>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modalFormOverlay">
+      <div class="modal-form__container">
+        <form action="#" class="modal-form" id="form">
+          <div class="modal-form__label-container">
+            <label for="password" class="modal-form__label">Enter Password:  </label>
+            <img src="./images/hello-kitty.png" alt="Hello Kitty" title="Hello Kitty" class="modal-form__img" id="modalFormImg">
+          </div>
+          <input type="password" class="modal-form__password" id="formPassword" placeholder="Pa enter ng password besh">
+          <!-- Success or Error Message Here -->
+          <span class="modal-form__message" id="formMessage"></span>
+          <input class="btn btn-primary modal-form__submit" id="formSubmit" type="submit"></input>
+        </form>
       </div>
     </div>
     <div id="main">
       <!-- Row Letter Container -->
-      <div class="letter-container">
+      <div class="letter-container letter--blur" id="letterContainer">
 
         <!-- Row Letter -->
         <div class="letter">
           <div class="letter-header">
-            <h2 class="letter-header__title">Charis</h2>
+            <h2 class="letter-header__title">Dear Charis,</h2>
             <div class="letter-header__date-container">
               <span class="letter-header__date">May 12, 2020</span>
               <span class="letter-header__time">10:42AM</span>
@@ -86,7 +103,7 @@
           </div>
 
           <div class="btn-letter__container mt-4 mb-4">
-            <a href="#" class="btn btn-primary btn-letter" id="btnLetter">HUG</a>
+            <a href="#" class="btn btn-primary btn-letter" id="btnHug">HUG</a>
           </div>
 
         </div>
