@@ -984,9 +984,10 @@ p {
   flex: 1 0 auto;
   background: #F9C8CE;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   #main {
     padding: 15px;
+    width: 100%;
   }
 }
 
@@ -1117,13 +1118,18 @@ footer {
   margin: 0 auto;
   background: #fff;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .letter-container .letter {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
+  .letter-container .letter {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .letter-container {
     width: 100%;
     margin: 0 auto;
@@ -1202,7 +1208,7 @@ footer {
 .letter .charis-content-paragraph {
   padding: 30px 45px 0 45px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .letter .charis-content-paragraph {
     padding-left: 20px;
     padding-right: 20px;
@@ -1253,7 +1259,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .envelope {
     width: 100%;
     margin: 0 auto;

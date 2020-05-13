@@ -34,7 +34,7 @@
   .charis-content-paragraph{
     padding:30px 45px 0 45px;
 
-    @media #{$device-sm} {
+    @media #{$device-md} {
       padding-left: 20px;
       padding-right: 20px;
     }

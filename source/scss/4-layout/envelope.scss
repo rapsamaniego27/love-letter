@@ -7,7 +7,7 @@
   justify-content:center;
   align-items:center;
 
-  @media #{$device-sm} {
+  @media #{$device-md} {
     width: 100%;
     margin: 0 auto;
   }

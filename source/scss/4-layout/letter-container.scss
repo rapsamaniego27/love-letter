@@ -11,14 +11,18 @@
     margin:0 auto;
     background:$white;
 
-   @media #{$device-sm} {
-     width: 100%;
+   @media #{$device-md} {
+     width: 90%;
      margin: 0 auto;
    }
+
+    @media #{$device-sm} {
+      width: 100% !important;
+    }
     
   }
 
- @media #{$device-sm} {
+ @media #{$device-md} {
    width: 100%;
    margin: 0 auto;
  }

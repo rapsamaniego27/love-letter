@@ -7,8 +7,9 @@
 #main{
   flex: 1 0 auto;
   background: #F9C8CE;
-  @media #{$device-sm} {
+  @media #{$device-md} {
    padding: 15px;
+   width:100%;
   }
 
 }
