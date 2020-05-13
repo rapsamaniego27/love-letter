@@ -1435,13 +1435,18 @@ footer {
   width: 400px;
   outline: none !important;
   border: 2px solid #aaa;
-  padding: 10px 20px;
-  margin: 10px 20px 0 20px;
-  font-size: 0.75rem;
+  padding: 10px 12px;
+  margin: 10px 12px 0 12px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 767px) {
   .modal-form__container .modal-form__password {
-    width: 75%;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-form__container .modal-form__password {
+    width: 80%;
   }
 }
 .modal-form__container .modal-form__password:focus {
