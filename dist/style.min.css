@@ -986,7 +986,6 @@ p {
 }
 @media only screen and (max-width: 1024px) {
   #main {
-    padding: 15px;
     width: 100%;
   }
 }
@@ -1126,12 +1125,13 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   .letter-container .letter {
-    width: 100% !important;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1024px) {
   .letter-container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 }
