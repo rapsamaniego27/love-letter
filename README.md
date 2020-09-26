@@ -1,8 +1,8 @@
 <!-- Heading -->
-# Charis Farewell Letter
+# A Love Letter
 
 <!-- Description -->
-This is a farewell letter for Charis
+A love letter for the special girl I would meet in the future. 
 
 
 

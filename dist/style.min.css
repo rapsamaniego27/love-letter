@@ -1105,7 +1105,7 @@ footer {
 }
 
 .letter-container {
-  width: 1020px;
+  max-width: 1020px;
   height: auto;
   margin: 50px auto;
   display: flex;
@@ -1113,13 +1113,13 @@ footer {
   flex-direction: column;
 }
 .letter-container .letter {
-  width: 900px;
+  max-width: 860px;
   margin: 0 auto;
   background: #fff;
 }
 @media only screen and (max-width: 1024px) {
   .letter-container .letter {
-    width: 90%;
+    max-width: 90vw;
     margin: 0 auto;
   }
 }
@@ -1131,8 +1131,7 @@ footer {
 }
 @media only screen and (max-width: 1024px) {
   .letter-container {
-    width: 90%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 
@@ -1176,11 +1175,11 @@ footer {
   }
 }
 
-.letter .charis-parent {
+.letter .girl-parent {
   justify-content: center;
   align-items: center;
 }
-.letter .charis-img__container {
+.letter .girl-img__container {
   position: relative;
   width: 204px;
   height: 204px;
@@ -1189,40 +1188,42 @@ footer {
   overflow: hidden;
   box-shadow: 0 8px 6px -6px black;
   margin: 0 auto;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 @media only screen and (max-width: 767px) {
-  .letter .charis-img__container {
+  .letter .girl-img__container {
     width: 180px;
     height: 180px;
   }
 }
-.letter .charis-img {
+.letter .girl-img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.letter .charis-intro {
+.letter .girl-intro {
   margin: 30px 20px 0 20px;
 }
-.letter .charis-content-paragraph {
+.letter .girl-content-paragraph {
   padding: 30px 45px 0 45px;
 }
 @media only screen and (max-width: 1024px) {
-  .letter .charis-content-paragraph {
+  .letter .girl-content-paragraph {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.letter .charis-content-end {
+.letter .girl-content-end {
   margin-right: 25px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-.letter .charis-close {
+.letter .girl-close {
   text-align: right;
 }
-.letter .charis-close__signature {
+.letter .girl-close__signature {
   text-align: right;
   display: block;
   font-family: "Great Vibes", cursive;
@@ -1231,7 +1232,7 @@ footer {
   padding-top: 5px;
 }
 @media only screen and (max-width: 767px) {
-  .letter .charis-close__signature {
+  .letter .girl-close__signature {
     padding-left: 30px;
     font-size: 2rem;
   }
@@ -1251,9 +1252,10 @@ footer {
 }
 
 .envelope {
-  width: 950px;
+  width: 90%;
   height: 220px;
   background: #F3B550;
+  box-shadow: 0px -12px 8px -9px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -1261,8 +1263,9 @@ footer {
 }
 @media only screen and (max-width: 1024px) {
   .envelope {
-    width: 100%;
+    width: 95vw;
     margin: 0 auto;
+    height: 160px;
   }
 }
 .envelope .envelope-message {
@@ -1412,14 +1415,20 @@ footer {
   overflow: auto;
   margin: 0 auto;
   box-shadow: 0 9px 9px -8px black;
-  padding: 40px 0;
+  padding: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .modal-form__container .modal-form {
   flex-direction: column;
   display: flex;
   align-items: center;
+}
+.modal-form__container .modal-password {
+  text-align: center;
+  color: #909090;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 767px) {
   .modal-form__container {
